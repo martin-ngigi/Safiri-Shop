@@ -10,19 +10,28 @@ import SwiftUI
 struct RoundButton: View {
     
     @State var title: String = "Title"
+    @State var btnColor: Color = Color.primaryApp
+    @State var icon: String = ""
+
     var didTap: (()->())?
     
     var body: some View {
         Button{
             didTap?()
         } label: {
+            
+            Image(icon)
+                .resizable()
+                .scaledToFit()
+                .frame(width: 15, height: 15)
+            
             Text(title)
                 .font(.customfont(.semibold, fontSize: 18))
                 .foregroundColor(.white)
                 .multilineTextAlignment(.center)
         }
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 60, maxHeight: 60)
-        .background(Color.primaryApp)
+        .background(btnColor)
         .cornerRadius(20)
     }
 }
