@@ -63,7 +63,15 @@ struct SigninView: View {
                         }
                         TextField("Enter mobile",
                         text: $textMobile)
+                        .foregroundColor(.primaryText)
+                        .keyboardType(.numberPad)
                         .frame(minWidth: 0, maxWidth: .infinity)
+                        .onTapGesture {
+                            // Dismiss the keyboard when tapped outside the text field
+                            UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+                            
+                        }
+                        .padding()
                        
                         
                     }
@@ -113,6 +121,12 @@ struct SigninView: View {
         .navigationBarHidden(true)
         .ignoresSafeArea()
         .background(Color.white)
+        .onTapGesture {
+            // Dismiss the keyboard when tapped outside the text field
+            UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+            
+        }
+        .padding()
     }
 }
 
