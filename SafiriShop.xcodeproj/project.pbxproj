@@ -19,6 +19,9 @@
 		A38C08512B02115400726A3D /* Gilroy-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A38C084E2B02115400726A3D /* Gilroy-SemiBold.ttf */; };
 		A38C08522B02115400726A3D /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A38C084F2B02115400726A3D /* Gilroy-Bold.ttf */; };
 		A38C08592B02129B00726A3D /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C08582B02129B00726A3D /* WelcomeView.swift */; };
+		A38C085B2B02143F00726A3D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A38C085A2B02143F00726A3D /* Launch Screen.storyboard */; };
+		A38C085D2B02172F00726A3D /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C085C2B02172F00726A3D /* UIExtension.swift */; };
+		A38C085F2B021E0900726A3D /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C085E2B021E0900726A3D /* RoundButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,9 @@
 		A38C084E2B02115400726A3D /* Gilroy-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-SemiBold.ttf"; sourceTree = "<group>"; };
 		A38C084F2B02115400726A3D /* Gilroy-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Bold.ttf"; sourceTree = "<group>"; };
 		A38C08582B02129B00726A3D /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		A38C085A2B02143F00726A3D /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		A38C085C2B02172F00726A3D /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
+		A38C085E2B021E0900726A3D /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,16 +113,17 @@
 		A38C081B2B020C0000726A3D /* SafiriShop */ = {
 			isa = PBXGroup;
 			children = (
+				A38C08532B02121C00726A3D /* UICommon */,
 				A38C08562B02123700726A3D /* View */,
 				A38C08552B02122F00726A3D /* Model */,
 				A38C08542B02122600726A3D /* ViewModel */,
-				A38C08532B02121C00726A3D /* UICommon */,
 				A38C084C2B0210C200726A3D /* Info.plist */,
 				A38C08492B020C7800726A3D /* Font */,
 				A38C081C2B020C0000726A3D /* SafiriShopApp.swift */,
 				A38C08202B020C0300726A3D /* Assets.xcassets */,
 				A38C08222B020C0300726A3D /* SafiriShop.entitlements */,
 				A38C08232B020C0300726A3D /* Preview Content */,
+				A38C085A2B02143F00726A3D /* Launch Screen.storyboard */,
 			);
 			path = SafiriShop;
 			sourceTree = "<group>";
@@ -160,6 +167,8 @@
 		A38C08532B02121C00726A3D /* UICommon */ = {
 			isa = PBXGroup;
 			children = (
+				A38C085C2B02172F00726A3D /* UIExtension.swift */,
+				A38C085E2B021E0900726A3D /* RoundButton.swift */,
 			);
 			path = UICommon;
 			sourceTree = "<group>";
@@ -300,6 +309,7 @@
 			files = (
 				A38C08502B02115400726A3D /* Gilroy-Regular.ttf in Resources */,
 				A38C08512B02115400726A3D /* Gilroy-SemiBold.ttf in Resources */,
+				A38C085B2B02143F00726A3D /* Launch Screen.storyboard in Resources */,
 				A38C08482B020C3200726A3D /* Reame.MD in Resources */,
 				A38C08522B02115400726A3D /* Gilroy-Bold.ttf in Resources */,
 				A38C084B2B020EF600726A3D /* Gilroy-Medium.ttf in Resources */,
@@ -330,7 +340,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A38C081D2B020C0000726A3D /* SafiriShopApp.swift in Sources */,
+				A38C085D2B02172F00726A3D /* UIExtension.swift in Sources */,
 				A38C08592B02129B00726A3D /* WelcomeView.swift in Sources */,
+				A38C085F2B021E0900726A3D /* RoundButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,8 +429,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -471,8 +483,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -500,14 +512,16 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.safiribytes.SafiriShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -539,14 +553,16 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.safiribytes.SafiriShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";

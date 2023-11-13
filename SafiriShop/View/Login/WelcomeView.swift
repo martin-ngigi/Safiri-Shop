@@ -9,7 +9,47 @@ import SwiftUI
 
 struct WelcomeView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            ///Background image.
+            Image("welcom_bg")
+                .resizable()
+                .scaledToFill()
+                .frame(width: .screenWidth, height: .screenHeight)
+            
+            VStack{
+                Spacer()
+                
+                Image("app_logo")
+                    .resizable()
+                    .frame(width: 60, height: 60)
+                    .padding(.bottom, 8)
+                
+                /// Welcome text
+                Text("Welcome\nto our store")
+                    .font(.customfont(.semibold, fontSize: 40))
+                    .foregroundColor(.white)
+                    .padding(.bottom, 8)
+                
+                /// Get your groceries Text
+                Text("Get your groceries in as fast as one hour")
+                    .font(.customfont(.semibold, fontSize: 16))
+                    .foregroundColor(.white.opacity(0.7))
+                    .multilineTextAlignment(.center)
+                    .padding(.bottom, 30)
+                
+                ///Get started button
+                RoundButton()
+                
+                Spacer()
+                    .frame(height: 80)
+            }
+            .padding(.horizontal, 20)
+        }
+        .navigationTitle("")
+        .navigationBarBackButtonHidden(true)
+        .navigationBarHidden(true)
+        .ignoresSafeArea()
+
     }
 }
 
