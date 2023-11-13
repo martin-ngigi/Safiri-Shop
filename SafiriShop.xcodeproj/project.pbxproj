@@ -22,6 +22,7 @@
 		A38C085B2B02143F00726A3D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A38C085A2B02143F00726A3D /* Launch Screen.storyboard */; };
 		A38C085D2B02172F00726A3D /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C085C2B02172F00726A3D /* UIExtension.swift */; };
 		A38C085F2B021E0900726A3D /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C085E2B021E0900726A3D /* RoundButton.swift */; };
+		A38C08612B021F6000726A3D /* SigninView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C08602B021F6000726A3D /* SigninView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		A38C085A2B02143F00726A3D /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		A38C085C2B02172F00726A3D /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
 		A38C085E2B021E0900726A3D /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		A38C08602B021F6000726A3D /* SigninView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				A38C08582B02129B00726A3D /* WelcomeView.swift */,
+				A38C08602B021F6000726A3D /* SigninView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 			files = (
 				A38C081D2B020C0000726A3D /* SafiriShopApp.swift in Sources */,
 				A38C085D2B02172F00726A3D /* UIExtension.swift in Sources */,
+				A38C08612B021F6000726A3D /* SigninView.swift in Sources */,
 				A38C08592B02129B00726A3D /* WelcomeView.swift in Sources */,
 				A38C085F2B021E0900726A3D /* RoundButton.swift in Sources */,
 			);

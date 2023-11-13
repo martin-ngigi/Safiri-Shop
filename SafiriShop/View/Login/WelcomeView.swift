@@ -38,7 +38,13 @@ struct WelcomeView: View {
                     .padding(.bottom, 30)
                 
                 ///Get started button
-                RoundButton()
+                NavigationLink{
+                    SigninView()
+                } label: {
+                    RoundButton(title: "Get started"){
+                        
+                    }
+                }
                 
                 Spacer()
                     .frame(height: 80)
@@ -55,6 +61,8 @@ struct WelcomeView: View {
 
 struct WelcomeView_Previews: PreviewProvider {
     static var previews: some View {
-        WelcomeView()
+        NavigationView{
+            WelcomeView()
+        }
     }
 }
