@@ -25,6 +25,13 @@
 		A38C08612B021F6000726A3D /* SigninView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C08602B021F6000726A3D /* SigninView.swift */; };
 		A38C08642B023ECD00726A3D /* CountryPicker in Frameworks */ = {isa = PBXBuildFile; productRef = A38C08632B023ECD00726A3D /* CountryPicker */; };
 		A38C08662B023F1900726A3D /* CountryPickerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C08652B023F1900726A3D /* CountryPickerUI.swift */; };
+		A38C08682B03376200726A3D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C08672B03376200726A3D /* LoginView.swift */; };
+		A38C086A2B0340CD00726A3D /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C08692B0340CD00726A3D /* MainViewModel.swift */; };
+		A38C086C2B03435A00726A3D /* LineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C086B2B03435A00726A3D /* LineTextField.swift */; };
+		A38C08712B034A9000726A3D /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = A38C08702B034A9000726A3D /* SDWebImageSwiftUI */; };
+		A38C08742B049D6B00726A3D /* ServiceCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C08732B049D6B00726A3D /* ServiceCall.swift */; };
+		A38C08762B04DC3200726A3D /* Globs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C08752B04DC3200726A3D /* Globs.swift */; };
+		A38C08792B05D68600726A3D /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C08782B05D68600726A3D /* UIKitExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +74,12 @@
 		A38C085E2B021E0900726A3D /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		A38C08602B021F6000726A3D /* SigninView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninView.swift; sourceTree = "<group>"; };
 		A38C08652B023F1900726A3D /* CountryPickerUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPickerUI.swift; sourceTree = "<group>"; };
+		A38C08672B03376200726A3D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A38C08692B0340CD00726A3D /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		A38C086B2B03435A00726A3D /* LineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineTextField.swift; sourceTree = "<group>"; };
+		A38C08732B049D6B00726A3D /* ServiceCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCall.swift; sourceTree = "<group>"; };
+		A38C08752B04DC3200726A3D /* Globs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globs.swift; sourceTree = "<group>"; };
+		A38C08782B05D68600726A3D /* UIKitExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A38C08712B034A9000726A3D /* SDWebImageSwiftUI in Frameworks */,
 				A38C08642B023ECD00726A3D /* CountryPicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -119,6 +133,7 @@
 		A38C081B2B020C0000726A3D /* SafiriShop */ = {
 			isa = PBXGroup;
 			children = (
+				A38C08772B05D66800726A3D /* Common */,
 				A38C08532B02121C00726A3D /* UICommon */,
 				A38C08562B02123700726A3D /* View */,
 				A38C08552B02122F00726A3D /* Model */,
@@ -176,6 +191,9 @@
 				A38C085C2B02172F00726A3D /* UIExtension.swift */,
 				A38C085E2B021E0900726A3D /* RoundButton.swift */,
 				A38C08652B023F1900726A3D /* CountryPickerUI.swift */,
+				A38C086B2B03435A00726A3D /* LineTextField.swift */,
+				A38C08732B049D6B00726A3D /* ServiceCall.swift */,
+				A38C08752B04DC3200726A3D /* Globs.swift */,
 			);
 			path = UICommon;
 			sourceTree = "<group>";
@@ -183,6 +201,7 @@
 		A38C08542B02122600726A3D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				A38C08692B0340CD00726A3D /* MainViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -207,8 +226,17 @@
 			children = (
 				A38C08582B02129B00726A3D /* WelcomeView.swift */,
 				A38C08602B021F6000726A3D /* SigninView.swift */,
+				A38C08672B03376200726A3D /* LoginView.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		A38C08772B05D66800726A3D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A38C08782B05D68600726A3D /* UIKitExtensions.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +257,7 @@
 			name = SafiriShop;
 			packageProductDependencies = (
 				A38C08632B023ECD00726A3D /* CountryPicker */,
+				A38C08702B034A9000726A3D /* SDWebImageSwiftUI */,
 			);
 			productName = SafiriShop;
 			productReference = A38C08192B020C0000726A3D /* SafiriShop.app */;
@@ -304,6 +333,7 @@
 			mainGroup = A38C08102B020C0000726A3D;
 			packageReferences = (
 				A38C08622B023ECD00726A3D /* XCRemoteSwiftPackageReference "CountryPicker" */,
+				A38C086F2B034A9000726A3D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = A38C081A2B020C0000726A3D /* Products */;
 			projectDirPath = "";
@@ -354,11 +384,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				A38C08662B023F1900726A3D /* CountryPickerUI.swift in Sources */,
+				A38C086C2B03435A00726A3D /* LineTextField.swift in Sources */,
+				A38C08792B05D68600726A3D /* UIKitExtensions.swift in Sources */,
+				A38C08682B03376200726A3D /* LoginView.swift in Sources */,
+				A38C08762B04DC3200726A3D /* Globs.swift in Sources */,
 				A38C081D2B020C0000726A3D /* SafiriShopApp.swift in Sources */,
 				A38C085D2B02172F00726A3D /* UIExtension.swift in Sources */,
 				A38C08612B021F6000726A3D /* SigninView.swift in Sources */,
 				A38C08592B02129B00726A3D /* WelcomeView.swift in Sources */,
+				A38C08742B049D6B00726A3D /* ServiceCall.swift in Sources */,
 				A38C085F2B021E0900726A3D /* RoundButton.swift in Sources */,
+				A38C086A2B0340CD00726A3D /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -730,6 +766,14 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		A38C086F2B034A9000726A3D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -737,6 +781,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A38C08622B023ECD00726A3D /* XCRemoteSwiftPackageReference "CountryPicker" */;
 			productName = CountryPicker;
+		};
+		A38C08702B034A9000726A3D /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A38C086F2B034A9000726A3D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

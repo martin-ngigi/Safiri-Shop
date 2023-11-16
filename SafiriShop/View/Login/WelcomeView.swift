@@ -39,7 +39,7 @@ struct WelcomeView: View {
                 
                 ///Get started button
                 NavigationLink{
-                    SigninView()
+                    LoginView()
                 } label: {
                     RoundButton(title: "Get started"){
                         

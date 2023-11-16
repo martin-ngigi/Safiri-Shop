@@ -19,11 +19,13 @@ struct RoundButton: View {
         Button{
             didTap?()
         } label: {
+            if(!icon.isEmpty){
+                Image(icon)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 15, height: 15)
+            }
             
-            Image(icon)
-                .resizable()
-                .scaledToFit()
-                .frame(width: 15, height: 15)
             
             Text(title)
                 .font(.customfont(.semibold, fontSize: 18))
